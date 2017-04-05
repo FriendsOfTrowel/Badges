@@ -1,0 +1,5 @@
+@function badges--mixin-example($value, $flags) {
+  @return (
+    ('content', $value, $flags),
+  );
+}

@@ -1,0 +1,40 @@
+{
+  "name": "trowel-badges",
+  "homepage": "https://github.com/FriendsOfTrowel/Badges",
+  "authors": [
+    "Loïc Goyet <loic@troopers.email>"
+  ],
+  "description": "The official Trowel Component for badges",
+  "main": [
+    "src/scss/badges.scss",
+    "src/twig/badge.html.twig",
+    "injector.json"
+  ],
+  "keywords": [
+    "scss",
+    "css",
+    "twig",
+    "html",
+    "trowel",
+    "trowel-badges",
+    "badge"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    ".bowerrc",
+    ".gitignore",
+    "gulpfile.babel.js",
+    "package.json",
+    "sache.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FriendsOfTrowel/Badges.git"
+  },
+  "dependencies": {
+    "trowel-core": "^4.0.2"
+  }
+}
