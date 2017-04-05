@@ -5,20 +5,18 @@
 @import 'utils/enables';
 @import 'utils/syntaxes';
 @import 'utils/trowel-variables';
-@import 'utils/mixin-example';
 
 $badge--selector: selector(new 'badge' with $badges--syntax);
 
 @if $badges--enabled {
   @include statement($badge--selector, (
-    ('@include badges--mixin-example', null),
     ('font-size', $badges--font-size),
     ('font-family', $badges--font-family),
     ('font-weight', $badges--font-weight),
     ('text-transform', $badges--text-transform),
     ('letter-spacing', $badges--letter-spacing),
     ('line-height', $badges--line-height),
-    ('text-align', $badges--text-align),
+    ('text-align', center),
     ('text-decoration', $badges--text-decoration),
     ('margin', $badges--margin),
     ('border-width', $badges--border-width),
@@ -29,5 +27,9 @@ $badge--selector: selector(new 'badge' with $badges--syntax);
     ('box-shadow', $badges--box-shadow),
     ('background', $badges--background),
     ('background-color', $badges--background-color),
+    ('display', inline-block),
+    ('padding', $badges--padding),
+    ('white-space', nowrap),
+    ('vertical-align', baseline),
   ));
 }

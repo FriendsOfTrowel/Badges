@@ -1,1 +1,1 @@
-.badge{font-size:1rem}
+.badge{font-size:.75em;font-family:'Open Sans',verdana,sans-serif;line-height:1;text-align:center;border-radius:.2em;color:#fff;background-color:#9b9b9d;display:inline-block;padding:.2em .4em;white-space:nowrap;vertical-align:baseline}.badge--primary{background-color:#1f0d33}.badge--success{background-color:#37d3bd}.badge--warning{background-color:#ffb000}.badge--danger{background-color:#fd4164}
