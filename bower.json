@@ -7,14 +7,11 @@
   "description": "The official Trowel Component for badges",
   "main": [
     "src/scss/badges.scss",
-    "src/twig/badge.html.twig",
     "injector.json"
   ],
   "keywords": [
     "scss",
     "css",
-    "twig",
-    "html",
     "trowel",
     "trowel-badges",
     "badge"

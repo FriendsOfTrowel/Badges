@@ -41,8 +41,7 @@ If you don't want to customize the trowel component in `scss` you can use the cs
 
 
 
-#### *Twig template*
-The twig template is located at the `./src/twig/badge.html.twig`.
+
 
 ## Usage
 to be written

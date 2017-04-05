@@ -7,6 +7,14 @@ import browserSync from 'browser-sync';
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
+// Template
+// ========
+
+gulp.task('template_test', () => {
+    return gulp.src('test/src/index.html')
+        .pipe($.prettify({ indent_size: 2 }))
+        .pipe(gulp.dest('test/dest'));
+});
 
 const report_error = error => {
   $.notify({
@@ -54,7 +62,7 @@ gulp.task('style', function() {
 });
 
 
-gulp.task('default', ['style']);
+gulp.task('default', ['style', 'template_test']);
 gulp.task('watch', ['default'], () => {
   browserSync({
     notify: false,
@@ -63,5 +71,5 @@ gulp.task('watch', ['default'], () => {
   });
 
   gulp.watch('./**/*.scss', ['style', reload]);
-  gulp.watch(['test/src/**/*.html.twig', 'src/twig/**/*.html.twig'], ['template_test', reload]);
+  gulp.watch(['test/src/**/*.html'], ['template_test', reload]);
 });

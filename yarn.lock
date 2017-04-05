@@ -1645,12 +1645,6 @@ gulp-cssmin@^0.1.7:
     map-stream "0.0.4"
     temp-write "~0.1.0"
 
-gulp-ext-replace@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/gulp-ext-replace/-/gulp-ext-replace-0.3.0.tgz#ff5c5cfcb92550daa9232a8f3eb35ef53cb5f260"
-  dependencies:
-    through2 "~2.0.1"
-
 gulp-load-plugins@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/gulp-load-plugins/-/gulp-load-plugins-1.5.0.tgz#4c419f7e5764d9a0e33061bab9618f81b73d4171"
@@ -3691,7 +3685,7 @@ through2@^0.6.1:
     readable-stream ">=1.0.33-1 <1.1.0-0"
     xtend ">=4.0.0 <4.1.0-0"
 
-through2@^2.0.0, through2@^2.0.1, through2@^2.0.3, through2@~2.0.1, through2@2.X:
+through2@^2.0.0, through2@^2.0.1, through2@^2.0.3, through2@2.X:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/through2/-/through2-2.0.3.tgz#0004569b37c7c74ba39c43f3ced78d1ad94140be"
   dependencies:
