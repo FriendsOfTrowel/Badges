@@ -46,7 +46,6 @@
     "gulp-sass": "^3.1.0",
     "gulp-size": "^2.1.0",
     "gulp-sourcemaps": "^2.5.1",
-    "gulp-twig": "^0.7.0",
     "run-sequence": "^1.2.2"
   }
 }

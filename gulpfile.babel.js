@@ -7,17 +7,6 @@ import browserSync from 'browser-sync';
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
-// Template
-// ========
-
-gulp.task('template_test', () => {
-    return gulp.src('test/src/index.html.twig')
-        .pipe($.twig())
-        .pipe($.extReplace('.html', '.html.html'))
-        .pipe($.prettify({ indent_size: 2 }))
-        .pipe(gulp.dest('test/dest'));
-    
-});
 
 const report_error = error => {
   $.notify({
@@ -65,7 +54,7 @@ gulp.task('style', function() {
 });
 
 
-gulp.task('default', ['style', 'template_test']);
+gulp.task('default', ['style']);
 gulp.task('watch', ['default'], () => {
   browserSync({
     notify: false,
